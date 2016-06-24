@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'MeteoconsRegular';
+    src: url('meteocons-webfont.eot');
+    src: url('meteocons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('meteocons-webfont.woff') format('woff'),
+         url('meteocons-webfont.ttf') format('truetype'),
+         url('meteocons-webfont.svg#MeteoconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.icon:before {
+	font-family: 'MeteoconsRegular';
+	content: attr(data-icon);
+    margin-right: 10px;
+}
+.ext:before {
+    margin-right: 0px!important;
+}
+#current_temp {
+	font-size: 3em;
+}
+#current_summary {
+	font-size:  1.5em;
+}
+.content {
+	text-align: center;
+}
+#map {
+        height: 60%;
+        width: 100%;
+      }
+.content {
+    padding: 0;
+    position : absolute !important; 
+    top : 40px !important;  
+    right : 0; 
+    bottom : 40px !important;  
+    left : 0 !important;     
+}
+.table th,.table td {
+    text-align: center;
+}
+.last_td {
+    margin-bottom: -35px!important;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #46AEF0;
+}
+.ext {
+    margin-bottom: -10px!important;
+    margin-top: 0px!important;
+}
+@media (max-width: 768px){
+    .icon:before {
+        margin-right: 25px;
+    }
+    .ext:before {
+    margin-right: 0px!important;
+}
+    h1, p {
+        margin-bottom: 5px;
+    }
+    #map {
+        width: 100%;
+    }
+
+}
+.table {
+    margin-bottom: 0px!important;
+}
+.table>tbody>tr>td{
+    vertical-align: middle!important;
+}
+.table>tbody>tr>th{
+    vertical-align: middle!important;
+}
+.table th, .table td {
+    text-align: left!important;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+} 
+.hrlyIcon {
+    font-size: 24px;
+    margin-left: 9px;
+    line-height: normal;
+}
+.gray {
+    display: inline-block;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #aaa;
+}
+.desc {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
